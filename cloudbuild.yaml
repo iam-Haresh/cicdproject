@@ -34,4 +34,4 @@ steps:
       
 images:
   - 'us-west1-docker.pkg.dev/upgradlabs-1740997927286/mycontainerrg/myapp:$BUILD_ID'
-logsBucket: "gs://amit23compow"
+logsBucket: "gs://mybucket235dfh"
