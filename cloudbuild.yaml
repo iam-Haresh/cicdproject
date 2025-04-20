@@ -24,14 +24,14 @@ steps:
     args: 
       - 'build'
       - '-t'
-      - 'us-west1-docker.pkg.dev/upgradlabs-1740997927286/mycontainerrg/myapp:$BUILD_ID'
+      - 'us-west1-docker.pkg.dev/upgradlabs-1740997938013/mycontainerrg/myapp:$BUILD_ID'
       - '.'
   # Step 4: Push Docker image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: 
       - 'push'
-      - 'us-west1-docker.pkg.dev/upgradlabs-1740997927286/mycontainerrg/myapp:$BUILD_ID'
+      - 'us-west1-docker.pkg.dev/upgradlabs-1740997938013/mycontainerrg/myapp:$BUILD_ID'
       
 images:
-  - 'us-west1-docker.pkg.dev/upgradlabs-1740997927286/mycontainerrg/myapp:$BUILD_ID'
+  - 'us-west1-docker.pkg.dev/upgradlabs-1740997938013/mycontainerrg/myapp:$BUILD_ID'
 logsBucket: "gs://mybucket235dfh"
